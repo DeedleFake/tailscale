@@ -158,7 +158,7 @@ func RunWithContext(ctx context.Context, args []string) (err error) {
 	return err
 }
 
-// Run is equivalent to calling [RunWithContext] the background context.
+// Run is equivalent to calling [RunWithContext] with the background context.
 func Run(args []string) (err error) {
 	return RunWithContext(context.Background(), args)
 }
